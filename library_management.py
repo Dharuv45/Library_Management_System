@@ -12,6 +12,7 @@ class LibraryManagementSystem:
 
         # Initialize database
         library_db.create_table()
+        # h
 
         # GUI Elements
         self.title_label = tk.Label(root, text="Library Management System", font=('Helvetica', 18), bg='sky blue')
