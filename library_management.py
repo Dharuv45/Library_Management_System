@@ -8,13 +8,13 @@ class LibraryManagementSystem:
         self.root = root
         self.root.title("Library Management System")
         self.root.geometry("800x600")
-        self.root.configure(bg='sky blue')  # Set background color
+        self.root.configure(bg='sky blue') 
 
-        # Initialize database
+       
         library_db.create_table()
-        # h
+        
 
-        # GUI Elements
+        
         self.title_label = tk.Label(root, text="Library Management System", font=('Helvetica', 18), bg='sky blue')
         self.title_label.pack(pady=10)
 
@@ -44,7 +44,7 @@ class LibraryManagementSystem:
         self.remove_button = tk.Button(root, text="Remove Book", command=self.remove_book, bg='white')
         self.remove_button.pack(pady=10)
 
-        # Load initial data
+        
         self.refresh_books()
 
     def refresh_books(self):
@@ -78,7 +78,7 @@ class LibraryManagementSystem:
         add_book_window = tk.Toplevel(self.root)
         add_book_window.title("Add Book")
         add_book_window.geometry("400x300")
-        add_book_window.configure(bg='sky blue')  # Set background color
+        add_book_window.configure(bg='sky blue') 
 
         tk.Label(add_book_window, text="Title:", bg='sky blue').pack(pady=5)
         title_entry = tk.Entry(add_book_window, width=30)
@@ -122,7 +122,7 @@ class LibraryManagementSystem:
             edit_book_window = tk.Toplevel(self.root)
             edit_book_window.title("Edit Book")
             edit_book_window.geometry("400x300")
-            edit_book_window.configure(bg='sky blue')  # Set background color
+            edit_book_window.configure(bg='sky blue')  
 
             tk.Label(edit_book_window, text="Title:", bg='sky blue').pack(pady=5)
             title_entry = tk.Entry(edit_book_window, width=30)
